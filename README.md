@@ -1,5 +1,3 @@
-<div style="border: 1px solid black; padding: 10px;">
-
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
 
 # osTicket - Prerequisites and Installation
@@ -162,5 +160,3 @@ In this home lab, I will deploy and configure osTicket on an Azure Windows VM to
 ---
 
 In this project, I successfully installed and set up **osTicket** on an Azure Windows VM to practice both admin and user skills. I configured the VM with Windows 10, installed IIS, PHP, and MySQL to support osTicket, and learned how to install and configure essential dependencies like PHP Manager and the Rewrite Module. The process also involved setting up and configuring PHP extensions, managing permissions, and creating a MySQL database. This project improved my understanding of web-based application installation, PHP configuration, and database management while also helping me troubleshoot issues during installation and configuration. It also provided hands-on experience with Azure VM setup and managing Windows IIS servers.
-
-</div>
