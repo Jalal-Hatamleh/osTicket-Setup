@@ -117,6 +117,9 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 ### 14. Continue osTicket Setup in the Browser
 
 * Access the setup page via http://localhost/osTicket/scp/login.php.
+
+     ∘ **Click on 'Continue'**
+
 * Fill in the required details:
 
      ∘ **Name Helpdesk**
