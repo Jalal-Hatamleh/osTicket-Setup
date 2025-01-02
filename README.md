@@ -41,11 +41,15 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
 
 ### 8. Install Required Software
-* From the “osTicket-Installation-Files” folder, install **VC_redist.x86.exe** and **MySQL 5.5.62** (mysql-5.5.62-win32.msi).
+* From the “osTicket-Installation-Files” folder, install **VC_redist.x86.exe**.
 
-     ∘ Choose **Typical Setup** and launch the configuration wizard after installation.
+* From the 'osTicket-Installation-Files' folder, install **MySQL 5.5.62** using the mysql-5.5.62-win32.msi installer.
 
-     ∘ Configure with:
+     ∘ Choose **'Typical Setup'**
+
+     ∘ After installation, launch the Configuration Wizard
+
+     ∘ Select **'Standard Configuration'**
 
       ■ Username: root
       ■ Password: root
