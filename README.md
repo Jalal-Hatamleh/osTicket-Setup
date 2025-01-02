@@ -26,18 +26,24 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 ### 4. Install and Enable IIS with CGI in Windows
 * Go to **'World Wide Web Services'** -> **'Application Development Features'** and check the box for **CGI**.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/2.PNG?raw=true)
 
 ### 5. Install PHP Manager for IIS
 * From the “osTicket-Installation-Files” folder, install **PHP Manager for IIS** (PHPManagerForIIS_V1.5.0.msi).
 
+![Installation Screenshot](https://raw.githubusercontent.com/Jalal-Hatamleh/osTicket-Setup/refs/heads/main/images/3.PNG)
+
 ### 6. Install the Rewrite Module
 * Install the **Rewrite Module** (rewrite_amd64_en-US.msi).
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://raw.githubusercontent.com/Jalal-Hatamleh/osTicket-Setup/refs/heads/main/images/4.PNG)
 
 ### 7. Set Up PHP Folder
 * Create the directory **C:\PHP.**
 * Unzip **PHP 7.3.8** (php-7.3.8-nts-Win32-VC15-x86.zip) into **C:\PHP.**
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/5.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/6.PNG?raw=true)
 
 
 ### 8. Install Required Software
@@ -55,9 +61,9 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
       ■ Password: root
 
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/7.PNG?raw=true)
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/8.PNG?raw=true)
 
 
 
@@ -67,7 +73,7 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 * Register PHP from within IIS: **PHP Manager -> C:\PHP\php-cgi.exe.**
 * Reload IIS by stopping and starting the server.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/9.PNG?raw=true)
 
 
 ### 10. Install osTicket v1.15.8
@@ -76,7 +82,7 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
 * Rename the folder to **'osTicket'** (Ensure the name contains no spaces).
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/10.PNG?raw=true)
 
 
 ### 11. Enable PHP Extensions
@@ -93,25 +99,29 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
     Refresh the site in your browser.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/11.PNG?raw=true)
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/12.PNG?raw=true)
 
 
 ### 12. Rename ost-sampleconfig.php to ost-config.php
 
 * Navigate to **C:\inetpub\wwwroot\osTicket\include** and rename **ost-sampleconfig.php** to **ost-config.php.**
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/13.PNG?raw=true)
 
 
 ### 13. Set Permissions for ost-config.php
 
 * Right-click on **ost-config.php**, disable inheritance, remove all permissions, and grant **Everyone** full control.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/14.PNG?raw=true)
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/15.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/16.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/17.PNG?raw=true)
 
 
 ### 14. Continue osTicket Setup in the Browser
@@ -126,7 +136,7 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
      ∘ **Default email** (receives emails from customers)
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/18.PNG?raw=true)
 
 
 ### 15. Install and Set Up the MySQL Database
@@ -135,8 +145,11 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 * Open **HeidiSQL** and create a session using the **username and password: root/root.**
 * Create a new database named **'osTicket'**
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/19.PNG?raw=true)
 
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/20.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/21.PNG?raw=true)
 
 ### 16. Complete osTicket Setup
 
@@ -148,8 +161,9 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
 * Click **Install Now!.**
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/22.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/23.PNG?raw=true)
 
 * **Clean up**:
 
@@ -157,17 +171,21 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
      ∘ Set permissions to **'Read'** only for the file: C:\inetpub\wwwroot\osTicket\include\ost-config.php"
 
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/26.PNG?raw=true)
+
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/27.PNG?raw=true)
+
 
 ### 17. Access osTicket
 
 * Once installed, access the help desk login page: http://localhost/osTicket/scp/login.php.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/24.PNG?raw=true)
 
 
 * End User's osTicket URL: http://localhost/osTicket/.
 
-![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
+![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/25.PNG?raw=true)
 
 
 **Key Takeaways and Skills Acquired**  
