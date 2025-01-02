@@ -129,8 +129,9 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
 
 
-### 15. Set Up the MySQL Database
+### 15. Install and Set Up the MySQL Database
 
+* From the 'osTicket-Installation-Files' folder, install **HeidiSQL** using the HeidiSQL_12.3.0.6589_Setup file.
 * Open **HeidiSQL** and create a session using the **username and password: root/root.**
 * Create a new database named **'osTicket.'**
 
