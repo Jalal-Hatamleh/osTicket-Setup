@@ -133,7 +133,7 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 
 * From the 'osTicket-Installation-Files' folder, install **HeidiSQL** using the HeidiSQL_12.3.0.6589_Setup file.
 * Open **HeidiSQL** and create a session using the **username and password: root/root.**
-* Create a new database named **'osTicket.'**
+* Create a new database named **'osTicket'**
 
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
 
@@ -151,6 +151,12 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
 
+* **Clean up**:
+
+     ∘ Delete the **'setup'** folder located at C:\inetpub\wwwroot\osTicket
+
+     ∘ Set permissions to **'Read'** only for the file: C:\inetpub\wwwroot\osTicket\include\ost-config.php"
+
 
 ### 17. Access osTicket
 
@@ -162,7 +168,6 @@ In this home lab, I will set up and configure osTicket on an Azure Windows VM to
 * End User's osTicket URL: http://localhost/osTicket/.
 
 ![Installation Screenshot](https://github.com/Jalal-Hatamleh/osTicket-Setup/blob/main/images/1.png?raw=true)
-
 
 
 **Key Takeaways and Skills Acquired**  
